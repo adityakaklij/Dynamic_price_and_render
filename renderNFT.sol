@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-// Developed by Aline Man team
+// Developed by  DegDango team
 
 
 // File: @openzeppelin/contracts/utils/introspection/IERC165.sol
@@ -1222,13 +1222,13 @@ abstract contract Ownable is Context {
 
 pragma solidity  ^0.8.0;
 
-contract AlineMan is ERC721Enumerable, Ownable {
+contract DegDango is ERC721Enumerable, Ownable {
   using Strings for uint256;
 
   string baseURI;
   string public baseExtension = ".json";
   uint256 public cost = 10 ether;
-  uint256 public maxSupply = 55;
+  uint256 public maxSupply = 10;
   uint256 public headStart = block.timestamp + 1 days;
   bool public paused = false;
   bool public revealed = false;
@@ -1255,18 +1255,69 @@ contract AlineMan is ERC721Enumerable, Ownable {
 
 function dynamicPrice(uint256 _supply) public pure returns (uint256 _cost){
     
-    if ((_supply >= 0) &&  (_supply <3)){
-        return 5 ether;
-    }
-    else if ((_supply >= 3) &&  (_supply <6)){
+    if ((_supply >= 0) &&  (_supply <10)){
         return 10 ether;
     }
-    else if ((_supply >= 6) &&  (_supply <9)){
-        return 15 ether;
+    else if ((_supply >= 10) &&  (_supply <50)){
+        return 25 ether;
+    }
+    else if ((_supply >= 50) &&  (_supply <75)){
+        return 30 ether;
+    }
+    else if ((_supply >= 75) &&  (_supply <100)){
+        return 40 ether;
+    }
+    else if ((_supply >= 100) &&  (_supply <150)){
+        return 50 ether;
+    }
+    else if ((_supply >= 150) &&  (_supply <200)){
+        return 55 ether;
+    }
+    else if ((_supply >= 200) &&  (_supply <250)){
+        return 60 ether;
+    }
+    else if ((_supply >= 250) &&  (_supply <300)){
+        return 65 ether;
+    }
+    else if ((_supply >= 300) &&  (_supply <350)){
+        return 70 ether;
+    }
+    else if ((_supply >= 350) &&  (_supply <400)){
+        return 75 ether;
+    }
+    else if ((_supply >= 400) &&  (_supply <450)){
+        return 80 ether;
+    }
+    else if ((_supply >= 450) &&  (_supply <500)){
+        return 85 ether;
+    }
+    else if ((_supply >= 500) &&  (_supply <550)){
+        return 90 ether;
+    }
+    else if ((_supply >= 550) &&  (_supply <600)){
+        return 95 ether;
+    }
+    else if ((_supply >= 600) &&  (_supply <650)){
+        return 100 ether;
+    }
+    else if ((_supply >= 650) &&  (_supply <700)){
+        return 105 ether;
+    }
+    else if ((_supply >= 700) &&  (_supply <750)){
+        return 110 ether;
+    }
+    else if ((_supply >= 750) &&  (_supply <800)){
+        return 115 ether;
+    }
+    else if ((_supply >= 800) &&  (_supply <850)){
+        return 120 ether;
+    }
+    else if ((_supply >= 850) &&  (_supply <900)){
+        return 125 ether;
     }
 
     else{
-    return 350 ether;
+    return 4 ether;
     }
 }
 
