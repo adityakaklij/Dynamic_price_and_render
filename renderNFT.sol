@@ -1395,7 +1395,7 @@ function mint() public payable {
         return
             string(
                 abi.encodePacked(
-                    "https://gateway.pinata.cloud/ipfs/QmZMRJUsJSHHYypaVyh23DFLurxA1XGjTu9bY1mHhSR3Ac/",
+                    "https://ipfs.io/ipfs/QmZMRJUsJSHHYypaVyh23DFLurxA1XGjTu9bY1mHhSR3Ac/",
                     Strings.toString(tokenId),
                     ".json"
                 )
