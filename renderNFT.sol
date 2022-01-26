@@ -1,4 +1,3 @@
-
 // SPDX-License-Identifier: MIT
 
 // Developed by Aline Man team
@@ -1242,7 +1241,7 @@ contract AlineMan is ERC721Enumerable, Ownable {
   constructor(
     string memory _initBaseURI,
     string memory _initNotRevealedUri
-  ) ERC721("AlineMan", "Aline") {
+  ) ERC721("degdango", "degdango") {
     setBaseURI(_initBaseURI);
     setNotRevealedURI(_initNotRevealedUri);
   }
@@ -1256,41 +1255,18 @@ contract AlineMan is ERC721Enumerable, Ownable {
 
 function dynamicPrice(uint256 _supply) public pure returns (uint256 _cost){
     
-    if (_supply < 5){
+    if ((_supply >= 0) &&  (_supply <3)){
         return 5 ether;
     }
-     if (_supply <10){
+    else if ((_supply >= 3) &&  (_supply <6)){
         return 10 ether;
     }
-    if (_supply < 15){
+    else if ((_supply >= 6) &&  (_supply <9)){
         return 15 ether;
     }
-    if (_supply < 20){
-        return 20 ether;
-    }
-    if (_supply < 25){
-        return 25 ether;
-    }
-    if (_supply < 30){
-        return 30 ether;
-    }
-    if (_supply < 35){
-        return 35 ether;
-    }
-    if (_supply < 40){
-        return 40 ether;
-    }
-    if (_supply < 45){
-        return 45 ether;
-    }
-    if (_supply < 50){
-        return 50 ether;
-    }
-    if (_supply < 55){
-        return 55 ether;
-    }
+
     else{
-    return 5 ether;
+    return 350 ether;
     }
 }
 
