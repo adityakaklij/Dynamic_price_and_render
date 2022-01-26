@@ -1315,9 +1315,126 @@ function dynamicPrice(uint256 _supply) public pure returns (uint256 _cost){
     else if ((_supply >= 850) &&  (_supply <900)){
         return 125 ether;
     }
+    else if ((_supply >= 900) &&  (_supply <950)){
+        return 130 ether;
+    }
+    else if ((_supply >= 950) &&  (_supply <1000)){
+        return 135 ether;
+    }
+    else if ((_supply >= 1000) &&  (_supply <1050)){
+        return 140 ether;
+    }
+    else if ((_supply >= 1050) &&  (_supply <1100)){
+        return 145 ether;
+    }
+    else if ((_supply >= 1100) &&  (_supply <1150)){
+        return 150 ether;
+    }
+    else if ((_supply >= 1150) &&  (_supply <1200)){
+        return 155 ether;
+    }
+    else if ((_supply >= 1200) &&  (_supply <1250)){
+        return 160 ether;
+    }
+    else if ((_supply >= 1250) &&  (_supply <1300)){
+        return 165 ether;
+    }
+    else if ((_supply >= 1300) &&  (_supply <1350)){
+        return 170 ether;
+    }
+    else if ((_supply >= 1350) &&  (_supply <1400)){
+        return 175 ether;
+    }
+    else if ((_supply >= 1400) &&  (_supply <1450)){
+        return 180 ether;
+    }
+    else if ((_supply >= 1450) &&  (_supply <1500)){
+        return 185 ether;
+    }
+    else if ((_supply >= 1500) &&  (_supply <1550)){
+        return 190 ether;
+    }
+    else if ((_supply >= 1550) &&  (_supply <1600)){
+        return 195 ether;
+    }
+    else if ((_supply >= 1600) &&  (_supply <1650)){
+        return 200 ether;
+    }
+    else if ((_supply >= 1650) &&  (_supply <1700)){
+        return 205 ether;
+    }
+    else if ((_supply >= 1700) &&  (_supply <1750)){
+        return 210 ether;
+    }
+    else if ((_supply >= 1750) &&  (_supply <1800)){
+        return 215 ether;
+    }
+    else if ((_supply >= 1800) &&  (_supply <1850)){
+        return 220 ether;
+    }
+    else if ((_supply >= 1850) &&  (_supply <1900)){
+        return 225 ether;
+    }
+    else if ((_supply >= 1900) &&  (_supply <1950)){
+        return 230 ether;
+    }
+    else if ((_supply >= 1950) &&  (_supply <2000)){
+        return 235 ether;
+    }
+    else if ((_supply >= 2000) &&  (_supply <2050)){
+        return 240 ether;
+    }
+    else if ((_supply >= 2050) &&  (_supply <2100)){
+        return 245 ether;
+    }
+    else if ((_supply >= 2100) &&  (_supply <2150)){
+        return 250 ether;
+    }
+    else if ((_supply >= 2150) &&  (_supply <2200)){
+        return 255 ether;
+    }
+    else if ((_supply >= 2200) &&  (_supply <2250)){
+        return 260 ether;
+    }
+    else if ((_supply >= 2250) &&  (_supply <2300)){
+        return 265 ether;
+    }
+    else if ((_supply >= 2300) &&  (_supply <2350)){
+        return 270 ether;
+    }
+    else if ((_supply >= 2350) &&  (_supply <2400)){
+        return 275 ether;
+    }
+    else if ((_supply >= 2400) &&  (_supply <2450)){
+        return 280 ether; 
+    }
+    else if ((_supply >= 2450) &&  (_supply <2500)){
+        return 285 ether;
+    }
+    else if ((_supply >= 2500) &&  (_supply <2550)){
+        return 290 ether;
+    }
+    else if ((_supply >= 2550) &&  (_supply <2600)){
+        return 295 ether;
+    }
+    else if ((_supply >= 2600) &&  (_supply <2650)){
+        return 300 ether;
+    }
+    else if ((_supply >= 2650) &&  (_supply <2700)){
+        return 305 ether;
+    }
+    else if ((_supply >= 2700) &&  (_supply <2750)){
+        return 310 ether;
+    }
+    else if ((_supply >= 2750) &&  (_supply <2800)){
+        return 315 ether;
+    }
+    else if ((_supply >= 2800) &&  (_supply <2851)){
+        return 320 ether;
+    }
 
     else{
-    return 4 ether;
+    return 10 ether;
     }
 }
 
