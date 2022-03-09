@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-// Developed by  DegDango team
+// Developed by  Adi team
 
 
 // File: @openzeppelin/contracts/utils/introspection/IERC165.sol
@@ -1222,7 +1222,7 @@ abstract contract Ownable is Context {
 
 pragma solidity  ^0.8.0;
 
-contract DegDango is ERC721Enumerable, Ownable {
+contract DynamicNftTest is ERC721Enumerable, Ownable {
   using Strings for uint256;
 
   string baseURI;
@@ -1241,7 +1241,7 @@ contract DegDango is ERC721Enumerable, Ownable {
   constructor(
     string memory _initBaseURI,
     string memory _initNotRevealedUri
-  ) ERC721("degdango", "degdango") {
+  ) ERC721("DynamicNftTest", "DYNT") {
     setBaseURI(_initBaseURI);
     setNotRevealedURI(_initNotRevealedUri);
   }
@@ -1465,10 +1465,6 @@ function mint() public payable {
   }
 
 
-
-
-
-
   function walletOfOwner(address _owner)
     public
     view
@@ -1482,6 +1478,7 @@ function mint() public payable {
     return tokenIds;
   }
   
+  // Generating Random Number.
   function randomNum(uint256 _mod, uint256 _seed, uint256 _salt) public view returns(uint256) {
       uint256 num = uint256(keccak256(abi.encodePacked(block.timestamp, msg.sender, _seed, _salt))) % _mod;
       return num;
@@ -1539,7 +1536,8 @@ function mint() public payable {
         return
             string(
                 abi.encodePacked(
-                    "https://ipfs.io/ipfs/QmZMRJUsJSHHYypaVyh23DFLurxA1XGjTu9bY1mHhSR3Ac/",
+                        // Sample ipfs link(Not Working)
+                    "https://ipfs.io/ipfs/QmZMRJUsJSLHqypaVyh23DFLurxA3XGjTu9bY1mHhSQ3Ac/",
                     Strings.toString(tokenId),
                     ".json"
                 )
