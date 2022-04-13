@@ -1390,8 +1390,6 @@ function mint() public payable {
   function withdraw() public payable onlyOwner {
     uint256 supply = totalSupply();
     require(supply == maxSupply || block.timestamp >= headStart, "Can not withdraw yet.");
-    (bool d, ) = payable(0xc221979949e0ACc4E1E715FbB232284f7eE412d4).call{value: address(this).balance * 10 / 100}("");
-    require(d);
     (bool s, ) = payable(msg.sender).call{value: address(this).balance}("");
     require(s);
   }
